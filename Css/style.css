@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(black 20%, white)
+}
+
+.notecard {
+    width: 20%;    
+    height: 600px;
+    border: 5px solid black;    
+    display: block;
+    margin: 100px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    box-shadow: 1px 1px 25px 2px rgba(19, 6, 6, 0.452);
+    transform-style: preserve-3d;
+    transition: 0.8s;
+    background: linear-gradient(-90deg, black, rgb(44, 42, 42) 50%);
+    
+    
+}
+.notecard:hover {
+    transform: rotatey(180deg);
+    background-image: url("https://cdn-media-1.freecodecamp.org/images/1*Xv37PaIjTqZzoWQUk-4arw.jpeg");
+    background-size: cover;
+    border: 5px solid white;
+    
+}
+
+
+.notecard .front, .notecard .back {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 60px;
+    backface-visibility: hidden;
+    
+}
+
+.notecard .front {
+    z-index: 2;
+    font-size: 3.5rem;
+    
+    
+}
+.notecard .front .word {
+    display: block;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    backface-visibility: hidden;
+}
+.notecard .front .word2 {
+    display: block;
+    text-align: center;
+    position: relative;
+    color: silver;
+    font-size: 1rem;
+    margin: 0;  
+    backface-visibility: hidden;
+}
+
+.notecard img {
+    width: 10%;
+    display: block;
+    margin: 50px auto;    
+    
+}
+.notecard .back {
+    z-index: 1;
+    word-wrap: break-word;
+    display: block;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+    
+
+}
+
+.notecard .back .definition {
+    width: 100%;
+    height: 100%;
+    color: rgba(196, 202, 202, 0.767);
+    position: relative;
+    top: 200px;
+    font-family: fantasy;
+    
+    
+}
+
+.notecard .back .definition .photo {
+    width: 60%;
+    margin: 0px auto;
+    object-fit: cover;
+    width: 60%;
+    margin: 0px auto;
+}
+
